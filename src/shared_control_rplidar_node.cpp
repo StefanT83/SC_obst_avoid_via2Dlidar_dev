@@ -8,7 +8,6 @@ Outputs:
 - topic /cmd_vel
 
 Tested on Ubuntu 20.04.1 + ROS Noetic
-
 */ 
 
 #include <ros/ros.h>
@@ -39,8 +38,8 @@ class SharedControl_rplidar {
    const double ROSbot_absvmax_bwd  {ROSbot_absvmax_fwd}; //m
    const double ROSbot_chassisWidth {0.24 + 0.08}; //[m] real dimension + inflate for obsta avoidance purpose
    const double ROSbot_absomegamax     {3.14/2.0}; //[rad/s]
-   const double ROSbot_distSensorToEdgeOfRobot_fwd {0.08} ;//m
-   const double ROSbot_distSensorToEdgeOfRobot_bwd {0.12} ;//m
+   const double ROSbot_distSensorToEdgeOfRobot_fwd {0.08} ;//[m]
+   const double ROSbot_distSensorToEdgeOfRobot_bwd {0.12} ;//[m]
 
    // // Part3: data members
    double vd_nz {0.0}, omegad_nz {0.0}; //normalized values
