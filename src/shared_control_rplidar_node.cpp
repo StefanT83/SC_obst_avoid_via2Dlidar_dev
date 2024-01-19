@@ -4,6 +4,9 @@ Inputs:
 - joypad: Sony DS4: right joystick data
 - odometry: linear velocity, angular velocity
 
+Outputs:
+- topic /cmd_vel
+
 Tested on Ubuntu 20.04.1 + ROS Noetic
 
 */ 
